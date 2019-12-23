@@ -1,0 +1,19 @@
+{
+  "name": "learnwebpack",
+  "version": "1.0.0",
+  "description": "Learn webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "keywords": [],
+  "author": "Vladislav Polishchuk",
+  "homepage": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.41.4"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
+}
