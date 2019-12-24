@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Learn webpack",
   "scripts": {
-    "test": "echo \"Error: no test specified\""
+    "test": "echo \"Error: no test specified\"",
+    "build": "webpack"
   },
   "private": true,
   "keywords": [],
