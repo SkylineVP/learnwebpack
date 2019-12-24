@@ -4,7 +4,7 @@
   "description": "Learn webpack",
   "scripts": {
     "test": "echo \"Error: no test specified\"",
-    "build": "webpack"
+    "build": "webpack --config webpack.config.js"
   },
   "private": true,
   "keywords": [],
@@ -12,6 +12,9 @@
   "homepage": "",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^3.4.0",
+    "file-loader": "^5.0.2",
+    "style-loader": "^1.1.1",
     "webpack": "^4.41.4",
     "webpack-cli": "^3.3.10"
   },
