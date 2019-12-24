@@ -1,30 +1,18 @@
-const path=require("path");
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports= {
-  entry: "./src/index.js",
-  output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, "dist"),
+  entry: {
+    app: './src/index.js',
+    print: './src/print.js'
   },
-  module: {
-    rules: [
-      {
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          {loader: 'css-loader',
-            options: {
-            importLoaders:1,
-              modules:true
-            }
-          }
-        ]
-      },
-      {
-        test: /\.(png|svg|jpeg|gif)$/,
-        use:[
-            "file-loader",
-        ],
-      },
-    ]
-  }
+  plugins: [
+    new HtmlWebpackPlugin({
+                            title: 'dsa',
+                          }),
+  ],
+  output: {
+    filename: `[name].bundle.js`,
+    path: path.resolve(__dirname, 'dist'),
+  },
+
 };
